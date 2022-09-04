@@ -2,7 +2,8 @@
 
 Projeto para estudo sobre o GraphQL.
 
-O projeto consiste em um API para cadastro de livros (title / author) onde é inserida em um banco de dados Sqlite para possível consulta atraves do GraphQL.
+O projeto consiste em um API para cadastro de livros (title / author) onde é inserida em um banco de dados Sqlite para
+possível consulta atraves do GraphQL.
 
 -- -
 
@@ -42,12 +43,51 @@ poetry run api
 
 -- -
 
+### 📋 Requests
+
+Cadastrar um novo livro
+```
+curl --location --request POST 'http://localhost:6010/books' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "title": "Senhor dos Aneis",
+    "author": "victor"
+}'
+```
+
+Buscar todos os livros cadastrados
+```
+curl --location --request GET 'http://localhost:6010/books'
+```
+
+Deletar um livro
+
+```
+curl --location --request DELETE 'http://localhost:6010/books/1'
+```
+
+GraphQL query (http://localhost:6010/graphql)
+
+```
+{
+    books {
+        title
+        author
+    }
+}
+```
+
+-- -
+
 ### 🔧 Deploy
 
 utilizar o commitzen para commit
+
 ```
 cz commit
 ```
+
+-- -
 
 ## 🛠️ Construído com
 
