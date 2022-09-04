@@ -42,6 +42,13 @@ poetry run api
 
 -- -
 
+### 🔧 Deploy
+
+utilizar o commitzen para commit
+```
+cz commit
+```
+
 ## 🛠️ Construído com
 
 Mencione as ferramentas que você usou para criar seu projeto
