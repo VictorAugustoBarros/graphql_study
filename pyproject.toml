@@ -18,12 +18,11 @@ strawberry-graphql = "^0.127.4"
 uvicorn = "^0.18.3"
 python-dotenv = "^0.21.0"
 requests = "^2.28.1"
-black = "^22.8.0"
-commitizen = "^2.32.2"
-pre-commit = "^2.20.0"
-pydocstyle = "^6.1.1"
 
 [tool.poetry.dev-dependencies]
+black = "^22.8.0"
+commitizen = "^2.32.2"
+pydocstyle = "^6.1.1"
 
 [tool.poetry.scripts]
 api = 'app.main:api.run'
