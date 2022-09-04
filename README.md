@@ -84,7 +84,11 @@ GraphQL query (http://localhost:6010/graphql)
 utilizar o commitzen para commit
 
 ```
+git add .
+
 cz commit
+
+git push origin master
 ```
 
 -- -
